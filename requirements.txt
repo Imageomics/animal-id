@@ -71,7 +71,7 @@ platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_17
 pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1706116770704/work
 prettytable==3.12.0
 prompt_toolkit==3.0.48
-protobuf==3.20.1
+protobuf==3.20.2
 psutil==6.1.0
 ptyprocess==0.7.0
 pure_eval==0.2.3
