@@ -485,14 +485,16 @@ if __name__ == "__main__":
     final_output = pd.concat([filtered_test, other_test])
 
     # Save results
-    viewpoint_dir = os.path.dirname(args.out_csv_path)
-    if os.path.exists(viewpoint_dir):
-        print("Removing Previous Instance of Experiment...")
-        # shutil.rmtree(viewpoint_dir)
+    output_file = args.out_csv_path  # Full path to the output file
+    if os.path.exists(output_file):
+        print(f"Removing Previous Instance of File: {output_file}")
+        os.remove(output_file)
 
     print("Saving the results...")
-    os.makedirs(viewpoint_dir, exist_ok=True)
-    final_output.to_csv(args.out_csv_path, index=False)
+    # Ensure the directory exists
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    # Save the DataFrame to the specified file
+    final_output.to_csv(output_file, index=False)
 
     if args.gt_csv_path:
         evaluate_viewpoint_classification_with_visuals(args.out_csv_path, args.gt_csv_path)
