@@ -13,7 +13,7 @@ python viewpoint_classifier.py <image_dir> <in_csv_path> <out_csv_path> [model_c
 1. **`image_dir`**: Directory containing localized images.
 2. **`in_csv_path`**: Path to the input CSV file for the classifier.
 3. **`out_csv_path`**: Path to save the output CSV file.
-4. **`model_checkpoint_path`** *(optional)*: Path to the model checkpoint file. (Will use default if not provided)
+4. **`model_checkpoint_path`** *(optional)*: Path to the model checkpoint file. (use default if not provided)
 5. **`gt_csv_path`** *(optional)*: Path to the ground truth CSV file for evaluation.
 
 ### Example
