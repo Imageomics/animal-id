@@ -1,12 +1,12 @@
-## Detector Script
+## Species Identifier Script
 
 ### Overview
-This script processes animal image data and detects animal bounding boxes using a pre-trained model. Human detections are ignored.
+This script uses bioclip to identify the species of bounded animal detections from a set of images. 
 
 ### Usage
 Run the script from the command line with the following arguments:
 ```bash
-python detector.py <image_dir> <in_csv_path> <si_dir> <out_csv_path>
+python species_identifier.py <image_dir> <in_csv_path> <si_dir> <out_csv_path>
 ```
 
 ### Arguments
@@ -16,7 +16,7 @@ python detector.py <image_dir> <in_csv_path> <si_dir> <out_csv_path>
 4. **`out_csv_path`**: The full path to the output csv file.
 ### Example
 ```bash
-python species_identifier.py ../input_img_example ../detector/annots/annots.csv ./bioclip ./output 
+python species_identifier.py ../input_img_example ../viewpoint_classifier/output_example.csv ./bioclip ./output 
 ```
 ### Output
-Processed CSV and JSON file at `annot_dir/annots_filename.*`.
+Processed CSV and JSON file at `output.csv`.
