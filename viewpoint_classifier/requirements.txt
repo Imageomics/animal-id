@@ -38,7 +38,7 @@ humanfriendly==10.0
 idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1701026962277/work
 ipython==8.29.0
 jedi==0.19.1
-Jinja2==3.1.4
+Jinja2==3.1.5
 joblib==1.4.2
 jsonpatch @ file:///home/conda/feedstock_root/build_artifacts/jsonpatch_1695536281965/work
 jsonpickle==3.3.0
